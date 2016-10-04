@@ -11,5 +11,9 @@ namespace SpaUserControl.Web.Models
         public string token_type { get; set; }
         public int expires_in { get; set; }
 
+        public string Email { get; set; }
+
+        public string Name { get; set; }
+
     }
 }

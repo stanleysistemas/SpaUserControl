@@ -39,13 +39,15 @@ namespace SpaUserControl.Api.Security
 
                 var identity = new ClaimsIdentity(context.Options.AuthenticationType);
 
-                identity.AddClaim(new Claim(ClaimTypes.Name, user.Email));
+                identity.AddClaim(new Claim(ClaimTypes.Email, user.Email));
                 identity.AddClaim(new Claim(ClaimTypes.GivenName, user.Name));
 
+                
                 GenericPrincipal principal = new GenericPrincipal(identity, null);
                 Thread.CurrentPrincipal = principal;
 
                 context.Validated(identity);
+  
             }
             catch(Exception ex)
             {

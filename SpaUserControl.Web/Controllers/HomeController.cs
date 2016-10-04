@@ -17,22 +17,27 @@ namespace SpaUserControl.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(string username, string password)
+        public ActionResult Index(string Username, string Password)
         {
             var client = new RestClient("http://localhost:12295");
 
             var request = new RestRequest("api/security/token", Method.POST);
             request.AddParameter("grant_type", "password");
-            request.AddParameter("username", username);
-            request.AddParameter("password", password);
+            request.AddParameter("username", Username);
+            request.AddParameter("password", Password);
 
             IRestResponse<TokenViewModel> response = client.Execute<TokenViewModel>(request);
             var token = response.Data.access_token;
 
             if (!String.IsNullOrEmpty(token))
+            {
                 FormsAuthentication.SetAuthCookie(token, false);
-
+                return RedirectToAction("Sistemas");
+            }
+            else
             return RedirectToAction("Index");
+
+
         }
 
         public ActionResult Logout()
@@ -41,18 +46,29 @@ namespace SpaUserControl.Web.Controllers
             return RedirectToAction("Index");
         }
 
+
+
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Stanley Sistemas.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contato.";
+
+            return View();
+        }
+
+        public ActionResult Sistemas()
+        {
+            ViewBag.Message = "Sistemas";
 
             return View();
         }
     }
+
+
 }

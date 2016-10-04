@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Sistemas";
+}
+
+<h2>Sistemas</h2>
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h1>Autenticado</h1>
+    @*<h3>Token: @User.Identity.Name</h3>*@
+    <a href="@Url.Action("Logout", "Home")">Sair</a>
+}
+
