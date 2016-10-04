@@ -6,7 +6,7 @@ namespace SpaUserControl.Infraestructure.Data
 {
     public class AppDataContext : DbContext
     {
-        public AppDataContext() : base("AppConnectionString")
+        public AppDataContext() : base("Dbconnectx")
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22310.1
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Domain", "SpaUserControl.Domain\SpaUserControl.Domain.csproj", "{A697B23B-1556-4B89-8789-12DD62381BD2}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Api", "SpaUserControl.Api\SpaUserControl.Api.csproj", "{EA151148-5744-473F-901B-8FE4A654C471}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Common", "SpaUserControl.Resource\SpaUserControl.Common.csproj", "{33C11CA0-7B5A-44F9-8A7C-2711EC1A9705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaUserControl.Web", "SpaUserControl.Web\SpaUserControl.Web.csproj", "{BC087FDA-6800-4DB4-97B2-F3AE9DF5F30C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{33C11CA0-7B5A-44F9-8A7C-2711EC1A9705}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33C11CA0-7B5A-44F9-8A7C-2711EC1A9705}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33C11CA0-7B5A-44F9-8A7C-2711EC1A9705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC087FDA-6800-4DB4-97B2-F3AE9DF5F30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC087FDA-6800-4DB4-97B2-F3AE9DF5F30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC087FDA-6800-4DB4-97B2-F3AE9DF5F30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC087FDA-6800-4DB4-97B2-F3AE9DF5F30C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
